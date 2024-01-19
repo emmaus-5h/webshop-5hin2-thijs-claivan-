@@ -37,6 +37,10 @@ footer {
 }
 
 /* index page */
+body {
+  background-color: gold;
+}
+
 .product{
   width: 100%; 
   height: inherit; 
