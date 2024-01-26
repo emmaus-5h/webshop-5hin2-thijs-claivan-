@@ -21,7 +21,7 @@ CREATE TABLE products (
 --
 
 insert into products (name, description, code, price) values ('Rolex', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5);
-insert into products (name, description, code, price) values ('Patek Phillipe', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
+insert into products (name, description, code, price) values ('Patek Phillipe', 'De Patek Aquanaut, een modern sporthorloge', '077030122-3', 11);
 insert into products (name, description, code, price) values ('Cartier', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
 insert into products (name, description, code, price) values ('Audemars Piguet', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
 insert into products (name, description, code, price) values ('Tag Heuer, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
