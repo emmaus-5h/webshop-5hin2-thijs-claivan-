@@ -19,7 +19,7 @@ CREATE TABLE products (
 
 CREATE TABLE merken (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255),
+  name VARCHAR (255)
  
   
 );
@@ -46,11 +46,11 @@ insert into products (name, description, code, price) values ('...', 'Nam ultric
 insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
-insert into merken (name) values ('Rolex');
-insert into merken (name) values ('Patek Phillipe');
-insert into merken (name) values ('Cartier');
-insert into merken (name) values ('Audemars Piguet');
-insert into merken (name) values ('Tag Heuer');
-insert into merken (name) values ('Breitling');
-insert into merken (name) values ('Omega');
-insert into merken (name) values ('Tudor');
+insert into merken (name, id) values ('Rolex', 1);
+insert into merken (name, id) values ('Patek Phillipe', 2);
+insert into merken (name, id) values ('Cartier', 3);
+insert into merken (name, id) values ('Audemars Piguet', 4);
+insert into merken (name, id) values ('Tag Heuer', 5);
+insert into merken (name, id) values ('Breitling', 6);
+insert into merken (name, id) values ('Omega', 7);
+insert into merken (name, id) values ('Tudor', 8);
