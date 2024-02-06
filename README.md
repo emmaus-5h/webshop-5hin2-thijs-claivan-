@@ -203,3 +203,11 @@ for help almost 24x7 with many questions and problems and providing basic shop c
 
 
 
+# plan api en web 
+API 
+ 1. app.get('/api/products', getProducts) 
+   vind je products als je het opvraagt
+<br>   in get products vind je de query: <br>
+ <br>  'SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY id ASC') <br>
+<br> deze moet je naapassen. gebruik altijd AS. <br>
+<br> eigen porducten toevoegen. in video wordt dit voorgedaan. <br>
