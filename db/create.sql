@@ -8,21 +8,26 @@
 
 
 CREATE TABLE products (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2),
-  merken VARCHAR (20),
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+code VARCHAR(15),
+name VARCHAR(255),
+description TEXT,
+price NUMERIC(10, 2),
+  grootte_id INTEGER,
+  merken_id integer
 );
-
 
 CREATE TABLE merken (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR (255)
- 
-  
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   name VARCHAR(255)
 );
+
+CREATE TABLE groottes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+  mm numeric(10),
+);
+
 
 --
 -- populate with data
@@ -45,12 +50,30 @@ insert into products (name, description, code, price) values ('...', 'Nam ultric
 insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
+insert into products (name, description, code, price) values ('...', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
-insert into merken (name, id) values ('Rolex', 1);
-insert into merken (name, id) values ('Patek Phillipe', 2);
-insert into merken (name, id) values ('Cartier', 3);
-insert into merken (name, id) values ('Audemars Piguet', 4);
-insert into merken (name, id) values ('Tag Heuer', 5);
-insert into merken (name, id) values ('Breitling', 6);
-insert into merken (name, id) values ('Omega', 7);
-insert into merken (name, id) values ('Tudor', 8);
+
+
+insert into merken (name) values ('Rolex');
+insert into merken (name) values ('Patek Phillipe');
+insert into merken (name) values ('Cartier');
+insert into merken (name) values ('Audemars Piguet');
+insert into merken (name) values ('Tag Heuer');
+insert into merken (name) values ('Omega');
+
+
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
+insert into grootte (name, mm) values ('Rolex, 42mm');
