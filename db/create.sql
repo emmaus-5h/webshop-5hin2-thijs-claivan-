@@ -29,11 +29,13 @@ CREATE TABLE merken (
 );
 
 insert into merken (merken) values ('Rolex');
-insert into merken (merken) values ('Patek Phillipe');
+insert into merken (merken) values ('Patek Philipe');
 insert into merken (merken) values ('Cartier');
 insert into merken (merken) values ('Audemars Piguet');
 insert into merken (merken) values ('Tag Heuer');
 insert into merken (merken) values ('Omega');
+insert into merken (merken) values ('Breitling');
+insert into merken (merken) values ('Tudor');
 -----------------------------------------------------------
 
 -- maten --------------------------------------------------
@@ -116,34 +118,34 @@ insert into product_category (product_id, category_id) values (10, 5);
 
 
 -- 1
-insert into products (name, description, code, price, merken) values ('Rolex', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 45000, 1);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Rolex GMT master II', 'Rolex', 'De GMT-Master II is een horloge van hoge kwaliteit dat perfect is voor iemand wie meerdere tijdzones in de gaten wil houden. De GMT-Master II heeft een tweekleurige bezel met daarop 24-uur markeringen en een extra wijzer waarmee je twee verschillende tijdzones tegelijkertijd kan aflezen.', '40mm', '5.000 - 10.000', 'automatisch', 'edelstaal', '816905633-0', 8600, 1);
 
 -- 2
-insert into products (name, description, code, price, merken) values ('Patek Phillipe Aquanaut', 'De Patek Aquanaut, een modern sporthorloge', '077030122-3', 89000, 2);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Patek Philipe Aquanaut steel', 'Patek Philipe', 'The Patek Philippe Nautilus 5167A-001 featuers a stainless steel case and a tropic style rubber strap. It is powered by the self-winding caliber 324 S C. Reference 5167/1A-001 is similar yet fitted with a stainless steel bracelet.', '38mm', '25.000+', 'quartz', 'edelstaal', '077030122-3', 25.000+, 2);
 
 -- 3
-insert into products (name, description, code, price, merken) values ('Cartier', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5, 3);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Cartier Tank Française', 'Cartier', 'De Tank Française werd geïntroduceerd in 1996, met een metalen band die harmonieus aansloot bij de kast. Het horloge maakte direct deel uit van de beroemde Tank-familie.', '36mm', '5.000 - 10.000', 'automatisch', 'keramiek', '445924201-X', 5.500, 3);
 
 -- 4
-insert into products (name, description, code, price, merken) values ('Audemars Piguet', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5, 4);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Audemars Piguet Roal Oak 41', 'Audemars Piguet', 'Een brede achthoekige lunette, acht zeshoekige schroeven, patrijspoortdesign: dat is de Royal Oak in een notendop. Dit felbegeerde horloge van Audemars Piguet is een icoon.', '42mm', '25.000+', 'automatisch', 'edelstaal', '693155505-7', 25.000+, 4);
 
 -- 5
-insert into products (name, description, code, price, merken) values ('Tag Heuer', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14, 5);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Tag Heuer Formula 1 Diamonds Bezel', 'Tag Heuer', 'De TAG Heuer Formula 1 zijn door de autosport geïnspireerde horloges. Erg herkenbaar aan de Formula 1 is de tachymeter op de lunette, waarmee de snelheid van een bewegend object te meten is', '36mm', '5.000 - 10.000', 'automatisch', 'titanium', '686928463-6', 5.250, 5);
 
 -- 6
-insert into products (name, description, code, price, merken) values ('Breitling', ' B21 Tourbillon Ford Mustang', '492662523-7', 45000, 6);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Breitling top time B01', 'Breitling', 'De Top Time B01 Deus is ontworpen in samenwerking met de Australische surf- en motorfabrikant Deus Ex Machina en zal motorrijders, boarders en backpackers aanspreken, die allemaal op zoek zijn naar de vrijheid om de wereld op hun eigen manier en in hun eigen tempo te verkennen.', '46mm', '5.000 - 10.000', 'quartz', 'edelstaal', '686928463-6', 8.750, 5);
 
 -- 7
-insert into products (name, description, code, price, merken) values ('Omega', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 7);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Omega seamaster professional', 'Omega', 'De Omega Seamaster Professional Chronometer is ontworpen om aan de hoogste precisienormen te voldoen en is uitgerust met een Zwitsers automatisch uurwerk dat is gecertificeerd door de COSC.', '42mm', '10.000 - 15.000', 'automatisch', 'keramiek', '492662523-7', 12.750, 7);
 
 -- 8
-insert into products (name, description, code, price, merken) values ('Tudor', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 8);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Tudor prince date day', 'Tudor', 'De Tudor Prince Date Dat, werd oorspronkelijk in de jaren 70 geïntroduceerd. Dankzij de dag- en datumweergave is het horloge niet alleen stijlvol, maar ook functioneel.', '40mm', '20.000 - 25.000', 'quartz', 'edelstaal', '493572523-8', 21.300, 8);
 
 -- 9
-insert into products (name, description, code, price, merken) values ('Tudor', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 9);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('rolex cosmograph daytona', 'Rolex', 'De Cosmograph Daytona is kenmerkend voor de expertise van Rolex en valt op door zijn chronometrische precisie en onfeilbare betrouwbaarheid.', '40mm', '20.000 - 25.000', 'automatisch', 'titanium', '492662523-9', 22.300, 9);
 
 -- 10
-insert into products (name, description, code, price, merken) values ('Tudor', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 10);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('patek philippe nautilus rose gold', 'Patek Philippe', 'De Patek Philippe Nautilus is een van de beroemdste en populairste luxe horloges ter wereld. De waarde van dit model is in de laatste jaren verveelvoudigd. Vooral zeldzame vintage-horloges worden aangeboden voor astronomische bedragen.', '46mm', '15.000 - 20.000', 'quatz', 'edelstaal', '492662523-10', 14.600, 10);
 
 
 
