@@ -115,7 +115,7 @@ insert into product_category (product_id, category_id) values (10, 5);
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-
+-- artiekelen ----------------------------------------------
 
 -- 1
 insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('Rolex GMT master II', 'Rolex', 'De GMT-Master II is een horloge van hoge kwaliteit dat perfect is voor iemand wie meerdere tijdzones in de gaten wil houden. De GMT-Master II heeft een tweekleurige bezel met daarop 24-uur markeringen en een extra wijzer waarmee je twee verschillende tijdzones tegelijkertijd kan aflezen.', '40mm', '5.000 - 10.000', 'automatisch', 'edelstaal', '816905633-0', 8600, 1);
@@ -146,6 +146,5 @@ insert into products (name, merken, description, maten, prijsklasse, aandrijving
 
 -- 10
 insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('patek philippe nautilus rose gold', 'Patek Philippe', 'De Patek Philippe Nautilus is een van de beroemdste en populairste luxe horloges ter wereld. De waarde van dit model is in de laatste jaren verveelvoudigd. Vooral zeldzame vintage-horloges worden aangeboden voor astronomische bedragen.', '46mm', '15.000 - 20.000', 'quatz', 'edelstaal', '492662523-10', 14.600, 10);
-
-
+------------------------------------------------------------
 
