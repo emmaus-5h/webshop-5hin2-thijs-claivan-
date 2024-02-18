@@ -18,7 +18,7 @@ prijsklasse VARCHAR (10),
 aandrijving VARCHAR (20),
 materialen VARCHAR (100),
 category_id INTEGER,
-price NUMERIC(10, 2),
+price NUMERIC(10, 2)
 );
 ------------------------------------------------------------
 
@@ -85,7 +85,7 @@ insert into materialen (materialen) values ('titanium');
 insert into materialen (materialen) values ('edelstaal');
 ------------------------------------------------------------
 
--- product_category ----------------------------------------
+-- materialen_aandrijving ----------------------------------------
 CREATE TABLE materialen_aandrijving (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   materialen_id INTEGER,
@@ -101,10 +101,8 @@ insert into materialen_aandrijving (materialen_id, aandrijving_id) values (3, 1)
 insert into materialen_aandrijving (materialen_id, aandrijving_id) values (3, 2);
 -------------------------------------------------------------
 
-
-
-  
-  --
+ 
+--
 -- populate with data
 --
 -- generared using
@@ -143,6 +141,6 @@ insert into products (name, merken, description, maten, prijsklasse, aandrijving
 insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('rolex cosmograph daytona', 'Rolex', 'De Cosmograph Daytona is kenmerkend voor de expertise van Rolex en valt op door zijn chronometrische precisie en onfeilbare betrouwbaarheid.', '40mm', '20.000 - 25.000', 'automatisch', 'titanium', '492662523-9', 22.300, 9);
 
 -- 10
-insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('patek philippe nautilus rose gold', 'Patek Philippe', 'De Patek Philippe Nautilus is een van de beroemdste en populairste luxe horloges ter wereld. De waarde van dit model is in de laatste jaren verveelvoudigd. Vooral zeldzame vintage-horloges worden aangeboden voor astronomische bedragen.', '46mm', '15.000 - 20.000', 'quatz', 'edelstaal', '492662523-10', 14.600, 10);
+insert into products (name, merken, description, maten, prijsklasse, aandrijving, materialen, code, price) values ('patek philippe nautilus rose gold', 'Patek Philippe', 'De Patek Philippe Nautilus is een van de beroemdste en populairste luxe horloges ter wereld. De waarde van dit model is in de laatste jaren verveelvoudigd. Vooral zeldzame vintage-horloges worden aangeboden voor astronomische bedragen.', '46mm', '15.000 - 20.000', 'quartz', 'edelstaal', '492662523-10', 14.600, 10);
 ------------------------------------------------------------
 
