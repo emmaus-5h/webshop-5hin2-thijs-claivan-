@@ -38,8 +38,13 @@ footer {
 
 /* index page */
 body {
-  background-color: ghostwhite;
-  
+    background-image: url('achtergrond2.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+body {
+    font-family: "Arial", sans-serif; 
 }
 
 .product{
