@@ -13,7 +13,7 @@ code VARCHAR(15),
 name VARCHAR(255),
 merken VARCHAR(250),
 description TEXT,
-maten VARCHAR (50),
+maten VARCHAR(50),
 prijsklasse VARCHAR (10),
 aandrijving VARCHAR (20),
 materialen VARCHAR (100),
@@ -57,11 +57,11 @@ CREATE TABLE prijsklasse (
   prijsklasse VARCHAR(255),
  );
 
-insert into prijsklasse (prijsklasse) values ('5.000 - 10.000')
-insert into prijsklasse (prijsklasse) values ('10.000 - 15.000')
-insert into prijsklasse (prijsklasse) values ('15.000 - 20.000')
-insert into prijsklasse (prijsklasse) values ('20.000 - 25.000')
-insert into prijsklasse (prijsklasse) values ('25.000+')
+insert into prijsklasse (prijsklasse) values ('5.000 - 10.000');
+insert into prijsklasse (prijsklasse) values ('10.000 - 15.000');
+insert into prijsklasse (prijsklasse) values ('15.000 - 20.000');
+insert into prijsklasse (prijsklasse) values ('20.000 - 25.000');
+insert into prijsklasse (prijsklasse) values ('25.000+');
 ------------------------------------------------------------
 
 -- aandrijving ---------------------------------------------
@@ -70,8 +70,8 @@ CREATE TABLE aandrijving (
   aandrijving VARCHAR(255),
  );
 
-insert into aandrijving (aandrijving) values ('automatisch')
-insert into aandrijving (aandrijving) values ('quartz')
+insert into aandrijving (aandrijving) values ('automatisch');
+insert into aandrijving (aandrijving) values ('quartz');
 ------------------------------------------------------------
 
 -- materialen ----------------------------------------------
@@ -80,29 +80,27 @@ CREATE TABLE materialen (
   materialen VARCHAR(255),
  );
 
-insert into materialen (materialen) values ('keramiek')
-insert into materialen (materialen) values ('titanium')
-insert into materialen (materialen) values ('edelstaal')
+insert into materialen (materialen) values ('keramiek');
+insert into materialen (materialen) values ('titanium');
+insert into materialen (materialen) values ('edelstaal');
 ------------------------------------------------------------
 
 -- product_category ----------------------------------------
-CREATE TABLE product_category (
+CREATE TABLE materialen_aandrijving (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  product_id INTEGER,
-  category_id INTEGER
+  materialen_id INTEGER,
+  aandrijving_id INTEGER
 );
 
-insert into product_category (product_id, category_id) values (1, 1);
-insert into product_category (product_id, category_id) values (2, 2);
-insert into product_category (product_id, category_id) values (3, 3);
-insert into product_category (product_id, category_id) values (4, 4);
-insert into product_category (product_id, category_id) values (5, 7);
-insert into product_category (product_id, category_id) values (6, 6);
-insert into product_category (product_id, category_id) values (7, 1);
-insert into product_category (product_id, category_id) values (8, 5);
-insert into product_category (product_id, category_id) values (9, 1);
-insert into product_category (product_id, category_id) values (10, 5);
+-- materialen dan aandrijving (...,...)
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (1, 1);
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (1, 2);
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (2, 1);
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (2, 2);
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (3, 1);
+insert into materialen_aandrijving (materialen_id, aandrijving_id) values (3, 2);
 -------------------------------------------------------------
+
 
 
   
